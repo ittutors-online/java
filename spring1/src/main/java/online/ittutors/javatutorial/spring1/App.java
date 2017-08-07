@@ -37,8 +37,13 @@ public class App {
 		// MessagePrinter printer = context.getBean(MessagePrinter.class);
 		// printer.printMessage();
 
-		for (int i = 1; i <= 10; ++i) {//SIMPLE FOR LOOP
-			System.out.println("Line " + i);
+		int i;
+		int num3 = 0;
+		for (i = 1; i <= 20; i++) {
+			if (i % 3 == 0)
+				continue;
+			num3++;
 		}
+		System.out.println("Number of numbers not divisible by 3 between 1 and 20 is  " + num3);
 	}
 }
